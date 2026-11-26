@@ -1,6 +1,6 @@
 """
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                CLARITY ART v4 FOR FORGE NEO (EXTENSION)                      ║
+║                  CLARITY ART FOR FORGE NEO (EXTENSION)                       ║
 ║      Universal Paired Sampler & Native-Calibrated Spectral Scheduler         ║
 ║                                                                              ║
 ║  Components:                                                                 ║
@@ -753,7 +753,7 @@ def sample_clarity_art(
     **kwargs,
 ) -> torch.Tensor:
     """
-    Clarity Art v4 Universal Sampler:
+    Clarity Art Universal Sampler:
     - Exact model type detection via predictor.prediction_type (fixes SDXL img2img / Hires Fix!).
     - Float32 internal latent accumulation (zero bfloat16 rounding loss on high-shift FLUX.3/MOSS).
     - FLOW MATCHING / RECTIFIED FLOW (Krea 2, Qwen 2.1, FLUX.3, MOSS, FLUX.1/2, Wan 2.1):
@@ -1042,7 +1042,7 @@ def _register_clarity_art():
 
     if not _LOGGED_REGISTRATION:
         _LOGGED_REGISTRATION = True
-        print("[Clarity Art] v4 Extension Paired Sampler & Scheduler registered successfully")
+        print("[Clarity Art] Extension Paired Sampler & Scheduler registered successfully")
 
 
 try:
